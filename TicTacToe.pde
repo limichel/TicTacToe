@@ -22,6 +22,7 @@ void setup()
 
 void draw()
 {
+	textAlign(CENTER);
 	if(computerTurn)
 	{
 		computerPlay();
