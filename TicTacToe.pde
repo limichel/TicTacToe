@@ -59,6 +59,18 @@ void draw()
 		win(2);
 	else if(tiles.get(0).flipped && tiles.get(0).xo == tiles.get(4).xo && tiles.get(4).xo == tiles.get(8).xo)
 		win(0);
+	else if(tiles.get(0).flipped && tiles.get(1).flipped && tiles.get(2).flipped && tiles.get(3).flipped && tiles.get(4).flipped && tiles.get(5).flipped && tiles.get(6).flipped && tiles.get(7).flipped && tiles.get(8).flipped)
+	{
+		fill(150, 150, 150, 20);
+		rectMode(CENTER);
+		rect(250, 230, 500, 80);
+		fill(255, 0, 0);
+		textAlign(CENTER);
+		text("Tie!", 250, 250);
+		playerTurn = false;
+		computerTurn = false;
+		gameOver = true;
+	}
 }
 
 class Tile
