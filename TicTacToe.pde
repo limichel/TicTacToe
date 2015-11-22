@@ -109,7 +109,7 @@ class Tile
 
 void win(int sample)
 {
-	fill(150, 150, 150, 20);
+	fill(150, 150, 150);
 	rectMode(CENTER);
 	rect(250, 230, 500, 80);
 	fill(255, 0, 0);
